@@ -34,7 +34,7 @@ function HeadlinesPage() {
     setErrorMessage('');
 
     try {
-      const url = `http://localhost:8080/api/headlines?category=${chosenCategory}&country=${chosenCountry}`;
+      const url = `https://newzback-1.onrender.com/api/headlines?category=${chosenCategory}&country=${chosenCountry}`;
       const response = await fetch(url, {
         headers: { Authorization: `Bearer ${token}` },
       });
@@ -59,7 +59,7 @@ function HeadlinesPage() {
   const fetchNotes = async () => {
     if (!token) return;
     try {
-      const res = await fetch('http://localhost:8080/api/notes', {
+      const res = await fetch('https://newzback-1.onrender.com/api/notes', {
         headers: { Authorization: `Bearer ${token}` },
       });
       if (!res.ok) throw new Error('Failed to fetch notes');
@@ -81,7 +81,7 @@ function HeadlinesPage() {
     if (!noteContent.trim()) return;
 
     try {
-      const res = await fetch('http://localhost:8080/api/notes', {
+      const res = await fetch('https://newzback-1.onrender.com/api/notes', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
