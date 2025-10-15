@@ -8,7 +8,7 @@ function Notes() {
   const fetchNotes = async () => {
     if (!token) return;
     try {
-      const res = await fetch('https://newzback-1.onrender.com/api/notes', {
+      const res = await fetch('https://newzback-2.onrender.com/api/notes', {
         headers: { Authorization: `Bearer ${token}` },
       });
       if (!res.ok) throw new Error('Failed to fetch notes');
