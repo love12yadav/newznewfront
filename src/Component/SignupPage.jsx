@@ -21,7 +21,7 @@ function SignupPage() {
     const signupData = { username, email, password };
 
     try {
-      const response = await fetch('https://newzback-2.onrender.com/signup', {
+      const response = await fetch('https://newzback-2.onrender.com/auth/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
