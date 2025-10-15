@@ -14,7 +14,7 @@ function LoginPage() {
     const loginData = { email, password };
 
     try {
-      const response = await fetch('https://newzback-1.onrender.com/auth/signing', {
+      const response = await fetch('https://newzback-2.onrender.com/auth/signing', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
