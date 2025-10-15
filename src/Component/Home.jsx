@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Navbar from './Navbar';
 
 const CATEGORIES = ['sports', 'health', 'science', 'business', 'technology'];
-const API_URL = 'https://newzback-1.onrender.com/api/headlines';
+const API_URL = 'https://newzback-2.onrender.com/api/headlines';
 
 function Home() {
   const [headlinesByCategory, setHeadlinesByCategory] = useState({});
